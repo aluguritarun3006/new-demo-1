@@ -5,6 +5,9 @@ resource "aws_s3_bucket" "b" {
     Name        = "My bucket tarun"
     Environment = "Dev"
   }
+  versioning {
+    enabled = true
+  }
 }
 
 resource "aws_s3_bucket_acl" "example" {
