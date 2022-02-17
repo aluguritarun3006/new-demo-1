@@ -15,14 +15,3 @@ resource "aws_s3_bucket_acl" "example" {
   acl    = "private"
 }
 
-resource "aws_s3_bucket" "b2" {
-  bucket = "my-tf-test-bucket2"
-
-  tags = {
-    Name        = "My bucket tarun"
-    Environment = "Dev"
-  }
-  versioning {
-    enabled = true
-  }
-}
