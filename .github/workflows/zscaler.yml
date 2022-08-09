@@ -1,10 +1,12 @@
 name: Zscanner IAC Scan
 on:
   push:
-    branches: [ $default-branch, $protected-branches ]
+    branches: 'main'
   pull_request:
-    branches: [ $default-branch ]  
-
+    branches: 'main'
+env:
+  AUTH_URL: "https://dev-auth.zscwp.io"
+  API_URL: "https://main.dev.api.zscwp.io"
 jobs:
   zscaler-iac-scan:
     runs-on: ubuntu-latest
@@ -20,9 +22,6 @@ jobs:
           region : 'CUSTOM'
           output_format : 'json'
           fail_build : 'false'
-        env:
-          AUTH_URL: "https://dev-auth.zscwp.io"
-          API_URL: "https://main.dev.api.zscwp.io"
       - name: Upload SARIF file
         if: ${{ success() || failure() && (steps.zscaler-iac-scan.outputs.sarif_file_path != '') }}
         uses: github/codeql-action/upload-sarif@v1
