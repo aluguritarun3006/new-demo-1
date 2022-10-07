@@ -1,6 +1,5 @@
 resource "aws_s3_bucket" "unrestricted" {
   bucket = "examplebuckettftest"
-  #zpc-skip-policy: ZS-AWS-00034:testing
   acl    = "private"
   versioning {
     enabled = true
