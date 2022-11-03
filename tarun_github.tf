@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "unrestricted" {
-  bucket = "examplebuckettftest"
+  bucket = "examplebuckettftest2"
   acl    = "private"
   versioning {
     enabled = true
