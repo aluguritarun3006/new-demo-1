@@ -16,7 +16,7 @@ jobs:
       - name : Code Checkout
         uses: actions/checkout@v2
       - name: "Say Hello Mona it's Monday2"
-        run: echo ${{ env:GITHUB_OUTPUT }}
+        run: echo "$env:GITHUB_OUTPUT"
       - name : Zscaler IAC Scan
         uses : ZscalerCWP/Zscaler-IaC-Action@tarun-test
         id : zscaler-iac-scan
