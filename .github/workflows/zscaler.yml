@@ -25,7 +25,7 @@ jobs:
           output_format : 'json+github-sarif'
           fail_build : 'true'
       - name: Upload SARIF file
-        if: ${{ steps.zscaler-iac-scan.outputs.sarif_file_path != '' }}
+        if: ${{ success() || failure() && steps.zscaler-iac-scan.outputs.sarif_file_path != '' }}
         uses: github/codeql-action/upload-sarif@v2
         with:
           sarif_file: ${{ steps.zscaler-iac-scan.outputs.sarif_file_path }}
