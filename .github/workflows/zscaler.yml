@@ -14,7 +14,7 @@ jobs:
       - name : Code Checkout
         uses: actions/checkout@v2
       - name : Zscaler IAC Scan
-        uses : ZscalerCWP/Zscaler-IaC-Action@main
+        uses : ZscalerCWP/Zscaler-IaC-Action@tarun-test
         id : zscaler-iac-scan
         with:
           client_id : XUvcQOG02optJlWailotj5awVYB5RpS1
