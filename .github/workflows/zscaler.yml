@@ -19,8 +19,8 @@ jobs:
         uses : ZscalerCWP/Zscaler-IaC-Action@tarun-test
         id : zscaler-iac-scan
         with:
-          client_id : b7D6GHwSCqrPZ7XPyyprnoRgSpY6JsdL
-          client_secret : dib4S2MRNoum2oW28Iv3MpxIqPYKEl-z8TSa_4Y3-diU-LI8-cTLkT21HW86QrUg
+          client_id : Ea3PUvxbwJvRwet2OZ14xLEnH6AOVEyq
+          client_secret : bQWyHXdFBKY_6Ml62ET901fW9DCdBRT4GoBb9OeVQXSFjT4S_gB_K7Pa_MB34bbC
           region : 'CUSTOM'
           output_format : 'json+github-sarif'
           fail_build : 'true'
