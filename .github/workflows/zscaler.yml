@@ -16,11 +16,11 @@ jobs:
       - name : Code Checkout
         uses: actions/checkout@v2
       - name : Zscaler IAC Scan
-        uses : ZscalerCWP/Zscaler-IaC-Action@tarun-test
+        uses : ZscalerCWP/Zscaler-IaC-Action@CWP-59209
         id : zscaler-iac-scan
         with:
-          client_id : tu4BqKEGnGBUUbOrmF1uKHuzQGtQrqkx
-          client_secret : BbNJdT_HQCVu0fVLqfQE8ek1NSCwO19SkNkJtw-2Dm732VtnZ_XY9UhQkZKgXepY
+          client_id : ZTcgK5sm6UzlDnIqoWuS0gst1yncEFFT
+          client_secret : iD1LapXYr3_rrccVdWdtDsgRRM2s_8kwTmlvRcSX6xjPbCleXYucUIsyMSIl0EVN
           region : 'CUSTOM'
           output_format : 'json+github-sarif'
           fail_build : 'true'
