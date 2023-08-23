@@ -19,8 +19,8 @@ jobs:
         uses : ZscalerCWP/Zscaler-IaC-Action@v1.5.0
         id : zscaler-iac-scan
         with:
-          client_id : ZTcgK5sm6UzlDnIqoWuS0gst1yncEFFT
-          client_secret : iD1LapXYr3_rrccVdWdtDsgRRM2s_8kwTmlvRcSX6xjPbCleXYucUIsyMSIl0EVN
+          client_id : AjyJg1561fmIotcxIkK6jy53JG5DZotl
+          client_secret : tASFntTXnyTImf-Gjt8bSQ1C7veAGPL39owarQxLp7bXLhUmSvAamdtXyTkRHzGE
           region : 'CUSTOM'
           output_format : 'json+github-sarif'
           fail_build : 'true'
