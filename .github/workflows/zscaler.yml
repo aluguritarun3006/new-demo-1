@@ -5,8 +5,8 @@ on:
   pull_request:
     branches: 'main'
 env:
-  AUTH_URL: "https://dev-auth.zscwp.io"
-  API_URL: "https://main.dev.api.zscwp.io"
+  AUTH_URL: "https://int-auth.zscwp.io"
+  API_URL: "https://int.api.zscwp.io"
 jobs:
   zscaler-iac-scan:
     runs-on: ubuntu-latest
@@ -19,8 +19,8 @@ jobs:
         uses : ZscalerCWP/Zscaler-IaC-Action@v1.5.0
         id : zscaler-iac-scan
         with:
-          client_id : AjyJg1561fmIotcxIkK6jy53JG5DZotl
-          client_secret : tASFntTXnyTImf-Gjt8bSQ1C7veAGPL39owarQxLp7bXLhUmSvAamdtXyTkRHzGE
+          client_id : UV7uwfg7a5Xx0O39HuKJTkQa7aJzuLkV
+          client_secret : sgNoPD1SSmHTcE1iafby36pOjlH3hPPbJWRVWOJDgtjH7QIMEA0HfApWLpPngvWT
           region : 'CUSTOM'
           output_format : 'json+github-sarif'
           fail_build : 'true'
