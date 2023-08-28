@@ -19,9 +19,9 @@ jobs:
         uses : ZscalerCWP/Zscaler-IaC-Action@CWP-59209
         id : zscaler-iac-scan
         with:
-          client_id : UV7uwfg7a5Xx0O39HuKJTkQa7aJzuLkV
-          client_secret : sgNoPD1SSmHTcE1iafby36pOjlH3hPPbJWRVWOJDgtjH7QIMEA0HfApWLpPngvWT
-          region : 'CUSTOM'
+          client_id : hidkp1FS4mQqOuFrYeEFG8Ud2rQuDoBH
+          client_secret : vVHyeYz7Q8uVXbvFu03Cmi327cAvs2WDwdMUwcpD-hGRfagHoyAgJMTMvQpeFj0W
+          region : 'US'
           output_format : 'json+github-sarif+test'
           fail_build : 'true'
       - name: Upload SARIF file
