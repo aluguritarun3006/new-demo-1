@@ -22,7 +22,7 @@ jobs:
           client_id : UV7uwfg7a5Xx0O39HuKJTkQa7aJzuLkV
           client_secret : sgNoPD1SSmHTcE1iafby36pOjlH3hPPbJWRVWOJDgtjH7QIMEA0HfApWLpPngvWT
           region : 'CUSTOM'
-          output_format : 'json+github-sarif'
+          output_format : 'json+github-sarif+test'
           fail_build : 'true'
       - name: Upload SARIF file
         if: ${{ success() || failure() && steps.zscaler-iac-scan.outputs.sarif_file_path != '' }}
