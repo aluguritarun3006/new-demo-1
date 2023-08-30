@@ -23,6 +23,7 @@ jobs:
           client_secret : vVHyeYz7Q8uVXbvFu03Cmi327cAvs2WDwdMUwcpD-hGRfagHoyAgJMTMvQpeFj0W
           region : 'US'
           fail_build : 'true'
+          output_format : 'json'
       - name: Upload SARIF file
         if: ${{ success() || failure() && steps.zscaler-iac-scan.outputs.sarif_file_path != '' }}
         uses: github/codeql-action/upload-sarif@v2
