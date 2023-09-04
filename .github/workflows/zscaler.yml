@@ -1,9 +1,9 @@
 name: Zscanner IAC Scan
 on:
   push:
-    branches: 'main'
+    branches: '*'
   pull_request:
-    branches: 'main'
+    branches: '*'
 env:
   AUTH_URL: "https://int-auth.zscwp.io"
   API_URL: "https://int.api.zscwp.io"
