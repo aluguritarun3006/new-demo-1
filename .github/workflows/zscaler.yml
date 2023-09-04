@@ -3,7 +3,6 @@ on:
   push:
     branches: '*'
   pull_request:
-    branches: '*'
 env:
   AUTH_URL: "https://int-auth.zscwp.io"
   API_URL: "https://int.api.zscwp.io"
