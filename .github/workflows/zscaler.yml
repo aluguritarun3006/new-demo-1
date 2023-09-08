@@ -4,8 +4,8 @@ on:
     branches: '*'
   pull_request:
 env:
-  AUTH_URL: "https://int-auth.zscwp.io"
-  API_URL: "https://int.api.zscwp.io"
+  AUTH_URL: "https://dev-auth.zscwp.io"
+  API_URL: "https://main.dev.api.zscwp.io"
 jobs:
   zscaler-iac-scan:
     runs-on: ubuntu-latest
@@ -18,9 +18,9 @@ jobs:
         uses : ZscalerCWP/Zscaler-IaC-Action@CWP-59209
         id : zscaler-iac-scan
         with:
-          client_id : hidkp1FS4mQqOuFrYeEFG8Ud2rQuDoBH
-          client_secret : vVHyeYz7Q8uVXbvFu03Cmi327cAvs2WDwdMUwcpD-hGRfagHoyAgJMTMvQpeFj0W
-          region : 'US'
+          client_id : gRLisrfR884v3WqQBQdm4m6jExs1Jqh4
+          client_secret : VmgghrNGXdqR1Q3ItBfpnHtO_MBj0vUUHMqtFmMlBVxrvOnSs_Ug51SF1xWfNqCC
+          region : 'CUSTOM'
           fail_build : 'true'
           output_format : 'json'
       - name: Upload SARIF file
